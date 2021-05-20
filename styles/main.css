@@ -74,6 +74,7 @@ main {
   grid-template-rows: repeat(5, auto);
   grid-template-columns: auto;
   place-items: center;
+  padding-bottom: 30px;
 }
 #History h2 {
   color: #23272a;
@@ -172,6 +173,23 @@ main {
   animation: 6s up-down infinite;
   width: 200px;
 }
+#Software{
+  padding: 20px;
+  text-align: center;
+}
+#Software h2{
+  color: #7289da;
+  font-size: 40px;
+   
+}
+.Interface{
+  z-index: 0;
+  
+}
+#Software .arrows{
+  opacity: 0;
+  position: relative;
+}
 
 @media only screen and (min-width: 1000px) {
   #History .History-animation {
@@ -180,6 +198,11 @@ main {
   #History .up-down {
     opacity: 0;
   }
+  #Software .arrows{
+    opacity: 1;
+    z-index: 10;
+  }
+
 }
 @media only screen and (min-width: 1500px) {
   main {
