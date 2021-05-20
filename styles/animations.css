@@ -29,6 +29,6 @@
     transform: translateY(100px) rotate(20deg);
   }
   100% {
-    transform: translateY(0px) translateX(40vw) rotate(-20deg);
+    transform: translateY(0px) translateX(50vw) rotate(-20deg);
   }
 }
