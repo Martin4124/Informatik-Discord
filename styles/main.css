@@ -7,7 +7,7 @@ body {
   overflow-x: hidden;
 }
 header {
-  background-image: url(/Hintergrund.png);
+  background-image: url("/Pictures/Hintergrund.png");
   color: #7289da;
   text-align: center;
   min-height: 100vh;
@@ -27,6 +27,11 @@ nav ul {
   bottom: 20px;
   text-align: right;
   padding: 15px 0px 15px 0px;
+  display: none;
+}
+nav ul.show {
+  display: flex;
+  flex-direction: column;
 }
 nav li {
   display: inline-block;
@@ -41,8 +46,16 @@ nav li:hover {
   text-decoration: underline;
   opacity: 100%;
 }
-header h1 {
-  font-size: 64px;
+.hamburger {
+  background-color: transparent;
+  color: #7289da;
+  border: 0;
+  cursor: pointer;
+  font-size: 30px;
+  transform: translateY(-10px) translateX(-10px);
+}
+.hamburger:focus {
+  outline: none;
 }
 header p {
   font-size: 32px;
@@ -53,8 +66,9 @@ header p {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.mid img {
-  transform: translateY(70px);
+.header-logo {
+  transform: translateY(50px);
+  width: 300px;
 }
 
 .Nitro-Animation {
@@ -67,7 +81,7 @@ header p {
 }
 
 main {
-  background-image: url(/Hintergrund.png);
+  background-image: url("/Pictures/Hintergrund.png");
 }
 #History {
   display: grid;
@@ -184,12 +198,25 @@ main {
 .Interface {
   z-index: 0;
   height: 900px;
-  background-image: url("/Discord-Interface-mobile.png");
+  background-image: url("/Pictures/Discord-Interface-mobile.png");
   background-size: 100%;
   background-repeat: no-repeat;
 }
-
+@media only screen and (min-width: 700px) {
+  nav ul {
+    display: block;
+  }
+  .hamburger {
+    display: none;
+  }
+}
 @media only screen and (min-width: 1000px) {
+  .header-logo {
+    width: 500px;
+  }
+  header p {
+    font-size: 62px;
+  }
   #History .History-animation {
     opacity: 1;
   }
@@ -197,7 +224,7 @@ main {
     opacity: 0;
   }
   .Interface {
-    background-image: url("/Discord-Interface.png");
+    background-image: url("/Pictures/Discord-Interface.png");
   }
 }
 @media only screen and (min-width: 1500px) {

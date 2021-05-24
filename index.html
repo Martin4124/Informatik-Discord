@@ -6,26 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <title>Discord</title>
 </head>
 <body>
     <header>
             
         <nav>
-            <img src="discord-seeklogo.com.svg" height="70px" >
-            <ul>
+            <img src="SVG/discord-seeklogo.com.svg" height="70px" >
+            <button class="hamburger" id="hamburgermenu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul id="nav-ul">
                 <li><a href="#History">History</a></li>
                 <li><a href="#Features">Features</a></li>
                 <li><a href="#Discord-Bot">Discord-Bot</a></li>
             </ul>
         </nav>
         <div class="mid">
-            <img src="Discord.png" alt="" width="300px;">
-            <h1>Discord</h1>
-            <p>Imagine a Place</p>
+            <img class="header-logo" src="Pictures/Discord.png" alt="">
+            <h1><img src="Pictures/Discord_Schrift.svg.png" width="90%;" alt=""></h1>
+            <p>Your place to talk</p>
         </div>
     </header>
-    <img src="Nitro-Pig.png" class="Nitro-Animation" alt="" width="180px">
+    <img src="Pictures/Nitro-Pig.png" class="Nitro-Animation" alt="" width="180px">
     <main>
         <section id="History">
             <h2>History</h2>
@@ -38,7 +42,7 @@
                 However, during the development process, Citron noticed how difficult it was for his team to work out tactics in games like Final Fantasy XIV and League of Legends using available voice over IP (VoIP) software. 
                 He found that some VoIP options required players to type in IP addresses just to connect, while others were resource-heavy and had known security problems. 
                 This led the developers to develop a chat service that was much friendlier to use and based on more modern technology.</p>
-                <img class="History-animation up-down" src="Nitro-horse.png" alt="">
+                <img class="History-animation up-down" src="Pictures/Nitro-horse.png" alt="">
             </div>
             <div class="The-Beginning">
                 <h3>The Beginning</h3>
@@ -60,10 +64,10 @@
                     This was part of their response to an increase of users as a result of the 2019-20 COVID-19 outbreak, which also included the introduction of server templates.
                     In May 2020, Discord changed its primary domain from discordapp.com to discord.com. 
                 </p>
-                <img class="History-animation up-down-rotate" src="discrod-nitro-chara.png" alt="">
+                <img class="History-animation up-down-rotate" src="Pictures/discrod-nitro-chara.png" alt="">
             </div>
             <div class="image-container">
-                <img src="app-icons-discord.png" alt="">
+                <img src="Pictures/app-icons-discord.png" alt="">
                 <div class="image-text">
                     <div class="image-header">Discord-Logo</div>
                     <p class="image-paragraph">The famous discord-logo is a bot called Clyde. Discord has never officially stated what it is meant to represent and is left up to the interpretation of the community and the user. The community has suggested that the controller foundation is there to link the company back to its gaming roots, and the smiley face has the sole purpose of being fun and playful, just like the brand. </p>
@@ -79,6 +83,7 @@
             </div>
         </section>
     </main>
+    <script src="main.js"></script>
 </body>
 </html>
 
