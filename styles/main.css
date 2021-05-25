@@ -32,6 +32,16 @@ nav ul {
 nav ul.show {
   display: flex;
   flex-direction: column;
+  position: absolute;
+  right: 0px;
+  height: 22vh;
+  top: 8vh;
+  background-color: #23272a;
+  align-items: center;
+  width: 50%;
+  z-index: 0;
+  transition: transform 0.5s ease-in;
+  transform: translateX(0%) translateY(-100px);
 }
 nav li {
   display: inline-block;
@@ -53,6 +63,7 @@ nav li:hover {
   cursor: pointer;
   font-size: 30px;
   transform: translateY(-10px) translateX(-10px);
+  z-index: 10;
 }
 .hamburger:focus {
   outline: none;
