@@ -35,13 +35,14 @@ nav ul.show {
   position: absolute;
   right: 0px;
   height: 22vh;
-  top: 8vh;
+  top: -20px;
   background-color: #23272a;
   align-items: center;
-  width: 50%;
+  width: 35%;
   z-index: 0;
-  transition: transform 0.5s ease-in;
-  transform: translateX(0%) translateY(-100px);
+  justify-content: center;
+  line-height: 40px;
+  border-radius: 40px;
 }
 nav li {
   display: inline-block;
@@ -208,7 +209,7 @@ main {
 }
 .Interface {
   z-index: 0;
-  height: 900px;
+  height: 100vh;
   background-image: url("/Pictures/Discord-Interface-mobile.png");
   background-size: 100%;
   background-repeat: no-repeat;
@@ -222,12 +223,6 @@ main {
   }
 }
 @media only screen and (min-width: 1000px) {
-  .header-logo {
-    width: 500px;
-  }
-  header p {
-    font-size: 62px;
-  }
   #History .History-animation {
     opacity: 1;
   }
@@ -239,6 +234,12 @@ main {
   }
 }
 @media only screen and (min-width: 1500px) {
+  .header-logo {
+    width: 400px;
+  }
+  header p {
+    font-size: 52px;
+  }
   main {
     padding-left: 10px;
     padding-right: 10px;
