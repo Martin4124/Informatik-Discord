@@ -207,12 +207,20 @@ main {
   color: #7289da;
   font-size: 40px;
 }
-.Interface {
-  z-index: 0;
-  height: 100vh;
+.Interface-mobile {
   background-image: url("/Pictures/Discord-Interface-mobile.png");
-  background-size: 100%;
   background-repeat: no-repeat;
+  background-size: 100%;
+}
+.hidden {
+  visibility: hidden;
+  width: 100%;
+}
+.Interface-desktop {
+  background-image: url("/Pictures/Discord-Interface.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: none;
 }
 @media only screen and (min-width: 700px) {
   nav ul {
@@ -229,8 +237,11 @@ main {
   #History .up-down {
     opacity: 0;
   }
-  .Interface {
-    background-image: url("/Pictures/Discord-Interface.png");
+  .Interface-mobile {
+    display: none;
+  }
+  .Interface-desktop {
+    display: block;
   }
 }
 @media only screen and (min-width: 1500px) {
