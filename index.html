@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/Interface.css">
+    <link rel="stylesheet" href="styles/Bot.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <title>Discord</title>
 </head>
@@ -82,9 +84,46 @@
             <h2>The Interface</h2>
             <div class="Interface-mobile">
                 <img  class="hidden" src="Pictures/Discord-Interface-mobile.png" alt="">
-            </div >
+                <i class="fas fa-arrow-up arrow_Interface arrow-up" id="press-voicechannel"></i>
+                <p id="VC-text" class="hide">The Voicechannel!<br>Here you can talk with others.</p>
+                <i class="fas fa-arrow-left arrow_Interface arrow-left" id="press-textchannel"></i>
+                <p id="TC-text" class="hide">The Textchannel!<br>Here you can chat with others.</p>
+                <i class="fas fa-arrow-down arrow_Interface arrow-down" id="press-Add"></i>
+                <p id="Add-text" class="hide">Add a Text or Voice channel!</p>
+                <i class="fas fa-arrow-right arrow_Interface arrow-aslant" id="press-Group"></i>
+                <p id="Group-text" class="hide">These are your groups you are in!</p>
+                <i class="fas fa-arrow-down arrow_Interface arrow-Friends" id="press-Friends"></i>
+                <p id="Friends-text" class="hide">Shows your friendslist!</p>
+                <i class="fas fa-arrow-down arrow_Interface arrow-Search" id="press-Search"></i>
+                <p id="Search-text" class="hide">Search for different groups!</p>
+                <i class="fas fa-arrow-down arrow_Interface arrow-Tag" id="press-Tag"></i>
+                <p id="Tag-text" class="hide">Shows your Tags!</p>
+            </div>
             <div class="Interface-desktop">
                 <img  class="hidden" src="Pictures/Discord-Interface.png" alt="">
+            </div>
+        </section>
+        <section id="Discord-Bot">
+            <h2>Discord.py</h2>
+            <div class="Bot_python">
+                <img src="https://discordpy.readthedocs.io/en/stable/_images/snake_dark.svg" width="90%" alt="">
+                <div class="Bot_python_Features">
+                    <h3>Features</h3>
+                        <ul>
+                            <li>Modern Pythonic API using async/await syntax</li>
+                            <li>Sane rate limit handling that prevents 429s</li>
+                            <li>Implements the entire Discord API</li>
+                            <li>Command extension to aid with bot creation</li>
+                            <li>Easy to use with an object oriented design</li>
+                            <li>Optimised for both speed and memory</li>
+                        </ul>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
