@@ -1,0 +1,30 @@
+#Discord-Bot h2 {
+  color: #7289da;
+  font-size: 40px;
+  text-align: center;
+}
+#Discord-Bot {
+  text-align: center;
+  padding: 20px;
+}
+.Bot_python {
+  background-color: #23272a;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Bot_python_Features {
+  width: max-content;
+  text-align: left;
+  color: #7289da;
+}
+.Bot_python_Features h3 {
+  text-align: center;
+  font-size: 25px;
+}
+.Bot_python_Features li {
+  margin: 10px;
+}

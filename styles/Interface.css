@@ -1,0 +1,195 @@
+#Software {
+  padding: 20px;
+  text-align: center;
+}
+#Software h2 {
+  color: #7289da;
+  font-size: 40px;
+}
+.Interface-mobile {
+  background-image: url("/Pictures/Discord-Interface-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+.hidden {
+  visibility: hidden;
+  width: 100%;
+}
+.Interface-desktop {
+  background-image: url("/Pictures/Discord-Interface.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.arrow-up {
+  color: #7289da;
+  position: absolute;
+  top: 65%;
+  left: 33%;
+  cursor: pointer;
+  animation: 5s arrow-up infinite;
+}
+.arrow-left {
+  position: absolute;
+  top: 31%;
+  left: 50%;
+  cursor: pointer;
+  animation: 5s arrow-left infinite;
+}
+.arrow-down {
+  position: absolute;
+  top: 47%;
+  right: 3%;
+  cursor: pointer;
+}
+.arrow-aslant {
+  position: absolute;
+  top: 12%;
+  left: 16%;
+  cursor: pointer;
+  transform: rotate(135deg);
+}
+.arrow-Friends {
+  position: absolute;
+  top: 88%;
+  left: 11.5%;
+  cursor: pointer;
+  animation: 5s arrow-up infinite;
+}
+.arrow-Search {
+  position: absolute;
+  top: 88%;
+  left: 48%;
+  cursor: pointer;
+  animation: 5s arrow-up infinite;
+}
+.arrow-Tag {
+  position: absolute;
+  top: 88%;
+  left: 84%;
+  cursor: pointer;
+  animation: 5s arrow-up infinite;
+}
+#TC-text {
+  color: #7289da;
+  position: absolute;
+  top: 30%;
+  left: 55%;
+  animation: 3s opacity infinite;
+  animation-iteration-count: 1;
+}
+#VC-text {
+  color: #7289da;
+  position: absolute;
+  top: 69%;
+  left: 21%;
+  animation: 3s opacity infinite;
+  animation-iteration-count: 1;
+}
+#Add-text {
+  color: #7289da;
+  position: absolute;
+  top: 42%;
+  right: 3%;
+  max-width: 160px;
+  animation: 3s opacity;
+  animation-iteration-count: 1;
+}
+#Group-text {
+  color: #7289da;
+  position: absolute;
+  top: 8%;
+  left: 19%;
+  animation: 3s opacity;
+  animation-iteration-count: 1;
+}
+#Friends-text {
+  color: #7289da;
+  position: absolute;
+  top: 76%;
+  left: 6%;
+  max-width: 100px;
+  animation: 3s opacity;
+  animation-iteration-count: 1;
+}
+#Search-text {
+  color: #7289da;
+  position: absolute;
+  top: 76%;
+  left: 37%;
+  max-width: 150px;
+  animation: 3s opacity;
+  animation-iteration-count: 1;
+}
+#Tag-text {
+  color: #7289da;
+  position: absolute;
+  top: 76%;
+  left: 77%;
+  max-width: 100px;
+  animation: 3s opacity;
+  animation-iteration-count: 1;
+}
+.arrow_Interface {
+  font-size: 2em;
+  color: #7289da;
+}
+.hide {
+  display: none;
+}
+@media only screen and (min-width: 500px) {
+  .arrow-Friends {
+    top: 90%;
+    left: 13%;
+  }
+  .arrow-Search {
+    top: 90%;
+    left: 48%;
+  }
+  .arrow-Tag {
+    top: 90%;
+    left: 84%;
+  }
+  #Friends-text {
+    color: #7289da;
+    position: absolute;
+    top: 84%;
+    left: 4%;
+    max-width: none;
+  }
+  #Search-text {
+    top: 84%;
+    left: 37%;
+    max-width: none;
+  }
+  #Tag-text {
+    color: #7289da;
+    position: absolute;
+    top: 84%;
+    left: 77%;
+    max-width: none;
+  }
+}
+@media only screen and (min-width: 700px) {
+  nav ul {
+    display: block;
+  }
+  .hamburger {
+    display: none;
+  }
+  .fa-arrow-up {
+    font-size: 2.5em;
+  }
+  .arrow-down {
+    top: 49%;
+    right: 4%;
+  }
+  .arrow-Friends {
+    top: 90%;
+    left: 13%;
+  }
+  #Add-text {
+    top: 45%;
+    right: 1.5%;
+  }
+}
