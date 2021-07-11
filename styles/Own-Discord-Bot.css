@@ -1,0 +1,88 @@
+#My-Discord-Bot h2 {
+  color: #7289da;
+  font-size: 40px;
+  text-align: center;
+}
+#My-Discord-Bot{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.cloud-Bot{
+  background-color: #23272a;
+  text-align: center;
+  color: #7289da;
+  width: max-content;
+  border-radius: 30px;
+  padding: 20px;
+  padding-top: 0px;
+  position: absolute;
+  bottom: 75px;
+  left: 80px;
+}
+.cloud-Bot h3{
+  font-size: 32px;
+}
+.cloud-Bot p{
+  font-size: 20px;
+}
+.cloud-Bot a{
+  padding: 20px;
+  background-color: #7289da;
+  border-radius: 40px;
+  text-decoration: none;
+  color: #23272a;
+  font-weight: bold;
+  margin:10px;
+  transition: transform 0.2s;
+}
+.cloud-Bot a:hover{
+  transform:scale(0.98);
+}
+.cloud-Bot_buttons{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.background-gear .fa-cog{
+  font-size: 500px;
+  color: #7289da;
+
+}
+.background-gear{
+  display:flex;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.rotate-360{
+  animation: 6s rotate-360 infinite;
+}
+@media only screen and (min-width: 600px) {
+  .background-gear .fa-cog{
+    font-size: 600px;
+  }
+  .cloud-Bot{
+    bottom: 122px;
+    left: 134px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .background-gear .fa-cog{
+    font-size: 800px;
+  }
+  .cloud-Bot{
+    bottom: 237px;
+    left: 195px;
+  }
+  .cloud-Bot_buttons{
+    flex-direction: row;
+  }
+  .cloud-Bot_buttons a{
+    padding: 25px;
+  }
+  .cloud-Bot h3{
+    font-size: 42px;
+  }
+}
